@@ -28,6 +28,7 @@
         if($password != $confirm_password) {
             array_push($errors, "Passwords not matching!");
         }
+
         // Save into DB
         if(count($errors) == 0){
             $hashed_password = md5($password);
